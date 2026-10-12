@@ -1,4 +1,4 @@
-:root {
+html {
   color-scheme: light dark;
   font-family: sans-serif;
 
@@ -7,4 +7,8 @@
 
   background-color: var(--bg);
   color: var(--fg);
+}
+
+body {
+  margin: 0;
 }
