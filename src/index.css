@@ -1,0 +1,10 @@
+:root {
+  color-scheme: light dark;
+  font-family: sans-serif;
+
+  --bg: light-dark(#eee, #222);
+  --fg: light-dark(#000, #fff);
+
+  background-color: var(--bg);
+  color: var(--fg);
+}
