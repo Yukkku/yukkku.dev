@@ -7,7 +7,7 @@ export const App = () => {
         <path d="M0,-20L10,-10V10L2,18V-2L9,-9V9L-9,-9L0,-18V20L-10,10V-10Z" style={{
           fill: "var(--fg)",
           "fill-rule": "evenodd",
-          transform: "scale(sqrt(3),1)"
+          transform: "scaleX(sqrt(3))"
         }} />
       </svg>
       <span class={styles.name}>Yukkku</span>
