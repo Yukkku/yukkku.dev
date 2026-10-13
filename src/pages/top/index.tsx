@@ -13,10 +13,7 @@ const LinkEntry = (props: { service: string, account: string, link: string }) =>
 export const Top = () => {
   return (<>
     <Title>Yukkku.dev</Title>
-    <header class={styles.header}>
-      <Icon class={styles.icon} />
-      <span class={styles.name}>Yukkku.dev</span>
-    </header>
+    <header class={styles.header}><Icon class={styles.icon} />Yukkku.dev</header>
     <table class={styles.links}>
       <LinkEntry service="GitHub" account="@Yukkku" link="https://github.com/Yukkku" />
       <LinkEntry service="X" account="@Yuk3u" link="https://x.com/Yuk3u" />
