@@ -3,10 +3,10 @@
 }
 
 .section {
+  margin: 1rem 0;
   & > .heading {
-    margin: 1rem 0 0 0;
     border-bottom: 2px solid var(--fg);
-    padding: 0 0 0 0.5rem;
+    padding-left: 0.5rem;
 
     font-size: var(--heading-size);
     font-weight: bold;
@@ -14,9 +14,10 @@
 
   --heading-size-tmp: var(--heading-size);
   & > .content {
+    display: flow-root;
     margin-left: 0.5rem;
     border-left: 2px solid var(--fg);
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    padding-left: 0.5rem;
     --heading-size: calc((var(--heading-size-tmp) * 2 + 1rem) / 3);
 
     & > .section {
