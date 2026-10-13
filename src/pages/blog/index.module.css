@@ -1,7 +1,6 @@
 .header {
   user-select: none;
   border-bottom: 2px solid var(--fg);
-  background-color: var(--bg);
   padding: 0.5rcap 0;
   line-height: 0;
   font-size: 1.5rem;
