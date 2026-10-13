@@ -1,5 +1,5 @@
 import { createResource, Show } from "solid-js";
-import { useParams } from "@solidjs/router";
+import { useParams, A } from "@solidjs/router";
 import { Dynamic } from "solid-js/web";
 
 import Icon from "../../components/icon";
@@ -12,8 +12,10 @@ export const Post = () => {
 
   return (<>
     <header class={styles.header}>
-      <Icon class={styles.icon} />
-      Yukkku.dev
+      <A href="/" class={styles.toplink}>
+        <Icon class={styles.icon} />
+        Yukkku.dev
+      </A>
     </header>
     <main class={styles.main}>
       <Show when={content()}>
