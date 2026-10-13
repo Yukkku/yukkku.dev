@@ -4,11 +4,11 @@ import { Router, Route } from "@solidjs/router";
 
 import './index.css';
 import Top from './pages/top';
-import Blog from './pages/blog';
+import Post from './pages/post';
 import NotFound from './pages/404';
 
 render(() => <Router>
   <Route path="/" component={Top} />
-  <Route path="/blog/:slug" component={Blog} />
+  <Route path="/posts/:slug" component={Post} />
   <Route path="*" component={NotFound} />
 </Router>, document.getElementById('root')!);
