@@ -1,0 +1,14 @@
+.header {
+  user-select: none;
+  border-bottom: 2px solid var(--fg);
+  background-color: var(--bg);
+  padding: 0.5rcap;
+  line-height: 0;
+  font-size: 1.875rem;
+
+  & > .icon {
+    height: 3rcap;
+    vertical-align: -0.75rcap;
+    margin-right: 0.5rcap;
+  }
+}
