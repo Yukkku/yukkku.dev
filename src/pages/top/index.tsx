@@ -12,7 +12,7 @@ export const Top = () => {
   return (<>
     <header class={styles.header}>
       <Icon class={styles.icon} />
-      <span class={styles.name}>Yukkku</span>
+      <span class={styles.name}>Yukkku.dev</span>
     </header>
     <table class={styles.links}>
       <LinkEntry service="GitHub" account="@Yukkku" link="https://github.com/Yukkku" />

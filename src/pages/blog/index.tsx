@@ -5,7 +5,7 @@ export const Top = () => {
   return (<>
     <header class={styles.header}>
       <Icon class={styles.icon} />
-      Yukkku
+      Yukkku.dev
     </header>
     <main>
       <h1>H1</h1>
