@@ -4,7 +4,9 @@ import { Router, Route } from "@solidjs/router";
 
 import './index.css';
 import Top from './pages/top';
+import NotFound from './pages/404';
 
 render(() => <Router>
   <Route path="/" component={Top} />
+  <Route path="*" component={NotFound} />
 </Router>, document.getElementById('root')!);
