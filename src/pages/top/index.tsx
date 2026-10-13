@@ -1,3 +1,5 @@
+import { Title } from "@solidjs/meta";
+
 import styles from "./index.module.css";
 import Icon from "../../components/icon";
 
@@ -10,6 +12,7 @@ const LinkEntry = (props: { service: string, account: string, link: string }) =>
 
 export const Top = () => {
   return (<>
+    <Title>Yukkku.dev</Title>
     <header class={styles.header}>
       <Icon class={styles.icon} />
       <span class={styles.name}>Yukkku.dev</span>
