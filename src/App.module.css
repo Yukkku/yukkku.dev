@@ -10,7 +10,17 @@
     vertical-align: -1rcap;
 
   }
-  & > .name {
-    grid-area: name;
+  & > .name { }
+}
+
+.links {
+  margin: 0 auto;
+  & .service {
+    padding-right: 0.5rem;
+    text-align: right;
+  }
+  & .account {
+    padding-left: 0.5rem;
+    text-align: left;
   }
 }
