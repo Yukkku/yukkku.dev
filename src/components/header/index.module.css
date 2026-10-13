@@ -1,0 +1,18 @@
+.header {
+  user-select: none;
+  border-bottom: 2px solid var(--fg);
+  padding: 0.5rcap 0;
+
+  & > .toplink {
+    color: var(--fg);
+    line-height: 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    & > .icon {
+      height: 3rcap;
+      vertical-align: -0.75rcap;
+      margin: 0 0.5rcap;
+    }
+  }
+}
