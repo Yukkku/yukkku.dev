@@ -1,4 +1,4 @@
-import styles from "./App.module.css";
+import styles from "./index.module.css";
 
 const LinkEntry = (props: { service: string, account: string, link: string }) => {
   return <tr>
@@ -7,7 +7,7 @@ const LinkEntry = (props: { service: string, account: string, link: string }) =>
   </tr>;
 };
 
-export const App = () => {
+export const Top = () => {
   return (<>
     <header class={styles.header}>
       <svg class={styles.icon} viewBox="-20 -20 40 40">
@@ -32,4 +32,4 @@ export const App = () => {
   </>);
 };
 
-export default App;
+export default Top;
