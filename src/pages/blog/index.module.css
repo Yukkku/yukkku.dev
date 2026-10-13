@@ -11,3 +11,8 @@
     margin: 0 0.5rcap;
   }
 }
+
+.main {
+  width: min(600px, 100vw);
+  margin: 0 auto;
+}
