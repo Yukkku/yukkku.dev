@@ -15,7 +15,7 @@
   --heading-size-tmp: var(--heading-size);
   & > .content {
     display: flow-root;
-    margin-left: 0.5rem;
+    margin: 0 0.5rem;
     border-left: 2px solid var(--fg);
     padding-left: 0.5rem;
     --heading-size: calc((var(--heading-size-tmp) * 2 + 1rem) / 3);
