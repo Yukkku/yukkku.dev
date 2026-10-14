@@ -3,6 +3,7 @@ import { useParams } from "@solidjs/router";
 
 import Frame from "../../components/frame";
 import Section from "../../components/section";
+import styles from "./index.module.css";
 
 export const Post = () => {
   const params = useParams<{ slug: string }>();
@@ -11,7 +12,13 @@ export const Post = () => {
   const title = () => content()?.info.title;
   return <Frame title={title()}>
     <Show when={content()}>
-      <Section heading={title()}>
+      <Section heading={<>
+        {title()}
+      </>}>
+        <div class={styles.info}>
+          <div>Shared: {content().info.shared}</div>
+          <div>Updated: {content().info.updated}</div>
+        </div>
         {content().Content()}
       </Section>
     </Show>

@@ -1,0 +1,10 @@
+.info {
+  float: right;
+  user-select: none;
+  text-align: right;
+  opacity: 0.75;
+  font-size: 0.8rem;
+  font-family: monospace;
+  font-weight: normal;
+  padding: 0.5em;
+}
