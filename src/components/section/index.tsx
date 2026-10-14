@@ -1,4 +1,5 @@
 import type { JSX } from "solid-js";
+
 import styles from "./index.module.css";
 
 export const Section = (props: { heading: JSX.Element, children?: JSX.Element }) => {
