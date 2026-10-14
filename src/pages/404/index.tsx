@@ -8,7 +8,8 @@ export const NotFound = () => {
     <Title>404 | Yukkku.dev</Title>
     <Header />
     <main class={styles.main}>
-      404
+      <div class={styles.number}>404</div>
+      <p class={styles.comment}>って番号書いてみたはいいものの, このページの実際のステータスコードは200なんですよね</p>
     </main>
   </>);
 };
