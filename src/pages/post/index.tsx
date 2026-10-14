@@ -12,11 +12,12 @@ export const Post = () => {
   const title = () => content()?.info.title;
   return <Frame title={title()}>
     <Show when={content()}>
-      <div class={styles.info}>
-        <div>Shared: {content().info.shared}</div>
-        <div>Updated: {content().info.updated}</div>
-      </div>
       <Section heading={title()}>
+        <div class={styles.info}>
+          <div>Shared:{content().info.shared}</div>
+          <div>Updated:{content().info.updated}</div>
+          <div><a href={`https://github.com/Yukkku/yukkku.dev/blob/main/src/posts/${slug()}.tsx`}>Source</a></div>
+        </div>
         {content().Content()}
       </Section>
     </Show>
