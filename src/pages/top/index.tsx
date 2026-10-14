@@ -11,7 +11,7 @@ const LinkEntry = (props: { service: string, account: string, link: string }) =>
 };
 
 export const Top = () => {
-  return (<>
+  return <>
     <Title>Yukkku.dev</Title>
     <header class={styles.header}><Icon class={styles.icon} />Yukkku.dev</header>
     <table class={styles.links}>
@@ -24,7 +24,7 @@ export const Top = () => {
       <LinkEntry service="Misskey.io" account="@Yukkku" link="https://misskey.io/@Yukkku" />
       <LinkEntry service="MuseScore.com" account="Yukkku" link="https://musescore.com/user/70915675" />
     </table>
-  </>);
+  </>;
 };
 
 export default Top;

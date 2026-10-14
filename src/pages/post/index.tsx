@@ -7,11 +7,11 @@ export const Post = () => {
   const params = useParams<{ slug: string }>();
   const slug = () => params.slug;
   const [content] = createResource(slug, slug => import(`../../posts/${slug}.tsx`));
-  return (<Frame title={content()?.info.title}>
+  return <Frame title={content()?.info.title}>
     <Show when={content()}>
       {content().Content()}
     </Show>
-  </Frame>);
+  </Frame>;
 };
 
 export default Post;
