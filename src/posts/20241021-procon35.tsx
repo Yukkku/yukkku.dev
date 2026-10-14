@@ -2,6 +2,8 @@ import Section from "../components/section";
 
 export const info = {
   title: "高専プロコン35参加記",
+  shared: "2024-10-21",
+  updated: "2026-10-15",
 };
 
 export const Content = () => {
