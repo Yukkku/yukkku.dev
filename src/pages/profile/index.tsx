@@ -9,8 +9,10 @@ export const Profile = () => {
       <Icon class={styles.icon} />
       <ruby>池本<rt>いけもと</rt></ruby> <ruby>悠生<rt>ゆう</rt></ruby>
     </div>
-    <p>私です. よくインターネット上でYukkkuと名乗っています. "Yukkku"の読み方は未定義ですが, みなさんからは「ゆっく」「ゆっっく」などと呼ばれています</p>
-    <p>現在, 宇部工業高等専門学校の電気工学科4年で, 誕生日は2006-09-14です</p>
+    <div class={styles.intro}>
+      <p>私です. よくインターネット上でYukkkuと名乗っています. "Yukkku"の読み方は未定義ですが, みなさんからは「ゆっく」「ゆっっく」などと呼ばれています</p>
+      <p>現在, 宇部工業高等専門学校の電気工学科4年で, 誕生日は2006-09-14です</p>
+    </div>
     <Section heading="領域">
       <Section heading="プログラミング">
         <p>プログラミング歴{Math.floor((Date.now() - +new Date("2016-05-04")) / 86400000)}日です</p>
