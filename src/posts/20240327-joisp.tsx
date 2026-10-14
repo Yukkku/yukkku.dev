@@ -7,7 +7,7 @@ export const info = {
 };
 
 export const Content = () => {
-  return <Section heading="JOI2024 春参加記">
+  return <>
     <p>うわぁ</p>
     <p><mark>Warning: 問題のネタバレを含みます</mark></p>
     <p>自分へ: 期間中のTwitterの動きも参照すると良いです</p>
@@ -76,5 +76,5 @@ export const Content = () => {
       <p>東京にいる間1度も土を踏んでいません</p>
       <p>現場からは以上です</p>
     </Section>
-  </Section>;
+  </>;
 };

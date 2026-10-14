@@ -7,7 +7,7 @@ export const info = {
 };
 
 export const Content = () => {
-  return <Section heading="JOI2024参加記">
+  return <>
     <p>参加記を書けと言われた気がしたので書きます</p>
     <Section heading="1日目">
       <p>楽しかったです (あとでちゃんと書き足します)</p>
@@ -36,5 +36,5 @@ export const Content = () => {
         <p>まさかダブリングに天才という修飾を付ける日が来るとは思いませんでした</p>
       </Section>
     </Section>
-  </Section>;
+  </>;
 };

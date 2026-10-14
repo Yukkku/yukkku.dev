@@ -2,16 +2,20 @@ import { createResource, Show } from "solid-js";
 import { useParams } from "@solidjs/router";
 
 import Frame from "../../components/frame";
+import Section from "../../components/section";
 
 export const Post = () => {
   const params = useParams<{ slug: string }>();
   const slug = () => params.slug;
   const [content] = createResource(slug, slug => import(`../../posts/${slug}.tsx`));
-  return <Frame title={content()?.info.title}>
+  const title = () => content()?.info.title;
+  return <Frame title={title()}>
     <Show when={content()}>
-      {content().Content()}
+      <Section heading={title()}>
+        {content().Content()}
+      </Section>
     </Show>
-  </Frame>;
+  </Frame >;
 };
 
 export default Post;

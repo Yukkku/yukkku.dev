@@ -7,7 +7,7 @@ export const info = {
 };
 
 export const Content = () => {
-  return <Section heading="高専プロコン36参加記">
+  return <>
     <p>ラストワン敗退</p>
     <Section heading="前提">
       <ul>
@@ -82,5 +82,5 @@ export const Content = () => {
       </ul>
     </Section>
     <p>以上です. また来年</p>
-  </Section>;
+  </>;
 };
