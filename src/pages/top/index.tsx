@@ -1,3 +1,4 @@
+import { A } from "@solidjs/router";
 import { Title } from "@solidjs/meta";
 
 import styles from "./index.module.css";
@@ -14,6 +15,10 @@ export const Top = () => {
   return <>
     <Title>Yukkku.dev</Title>
     <header class={styles.header}><Icon class={styles.icon} />Yukkku.dev</header>
+    <div class={styles.pages}>
+      <A href="/profile">Profile</A>
+      <A href="/posts">Posts</A>
+    </div>
     <table class={styles.links}>
       <LinkEntry service="GitHub" account="@Yukkku" link="https://github.com/Yukkku" />
       <LinkEntry service="X" account="@Yuk3u" link="https://x.com/Yuk3u" />

@@ -12,6 +12,13 @@
   }
 }
 
+.pages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
 .links {
   margin: 0 auto;
   & .service {
