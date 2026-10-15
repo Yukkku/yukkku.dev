@@ -3,18 +3,16 @@ import { useParams } from "@solidjs/router";
 import { Title } from "@solidjs/meta";
 
 import Section from "../../components/section";
-import info from "../../../posts";
+import posts, { type Info } from "../../../posts";
 import NotFound from "../404";
 import styles from "./index.module.css";
 
 export const Post = () => {
   const params = useParams<{ slug: string }>();
   const slug = () => params.slug;
-  const post = () => {
+  const post = (): Info | undefined => {
     const t = slug();
-    if (t in info) {
-      return info[t];
-    }
+    if (t in posts) return posts[t];
   }
   const [content] = createResource(post, post => {
     return post?.load();
@@ -38,7 +36,7 @@ export const Post = () => {
           <div class={styles.loading}>Loading...</div>
         </Show>
         <Show when={content.state === "ready" || content.state === "refreshing"}>
-          {content().default}
+          {content().default()}
         </Show>
       </Section>
     </Show>

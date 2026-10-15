@@ -1,3 +1,12 @@
+import type { JSX } from "solid-js";
+
+export interface Info {
+  title: string,
+  shared: string,
+  updated: string,
+  load: () => Promise<{ default: () => JSX.Element }>,
+}
+
 export default {
   "20240206-joiho": {
     title: "JOI2024参加記",
@@ -23,4 +32,4 @@ export default {
     updated: "2026-10-15",
     load: () => import("./20251013-procon36"),
   },
-} as const;
+} as const satisfies { [slug: string]: Info };
