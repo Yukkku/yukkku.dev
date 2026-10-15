@@ -1,10 +1,12 @@
-import Frame from "../../components/frame";
+import { Title } from "@solidjs/meta";
+
 import Section from "../../components/section";
 import Icon from "../../components/icon";
 import styles from "./index.module.css";
 
 export const Profile = () => {
-  return <Frame title="Profile">
+  return <>
+    <Title>Profile | Yukkku.dev</Title>
     <div class={styles.nameplate}>
       <Icon class={styles.icon} />
       <ruby>池本<rt>いけもと</rt></ruby> <ruby>悠生<rt>ゆう</rt></ruby>
@@ -56,7 +58,7 @@ export const Profile = () => {
         <p>数学基礎論や位相空間論などを中途半端に齧り, 賢い定義に唸るなどしています. イデアルって概念考えた人すごすぎ</p>
       </Section>
     </Section>
-  </Frame >;
+  </>;
 };
 
 export default Profile;

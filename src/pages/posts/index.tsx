@@ -1,7 +1,7 @@
 import { For } from "solid-js";
 import { A } from "@solidjs/router";
+import { Title } from "@solidjs/meta";
 
-import Frame from "../../components/frame";
 import Section from "../../components/section";
 
 const info: {
@@ -13,7 +13,8 @@ const info: {
 } = import.meta.glob("../../../posts/*.tsx", { import: 'info', eager: true });
 
 export const Post = () => {
-  return <Frame title="Posts">
+  return <>
+    <Title>Posts | Yukkku</Title>
     <Section heading="Posts">
       <ul>
         <For each={Object.entries(info).sort()}>{([key, info]) => {
@@ -22,7 +23,7 @@ export const Post = () => {
         }}</For>
       </ul>
     </Section>
-  </Frame>;
+  </>;
 };
 
 export default Post;
