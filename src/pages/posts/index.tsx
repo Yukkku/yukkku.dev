@@ -12,7 +12,7 @@ const info: {
   }
 } = import.meta.glob("../../../posts/*.tsx", { import: 'info', eager: true });
 
-export const Post = () => {
+export const Posts = () => {
   return <>
     <Title>Posts | Yukkku</Title>
     <Section heading="Posts">
@@ -26,4 +26,4 @@ export const Post = () => {
   </>;
 };
 
-export default Post;
+export default Posts;
