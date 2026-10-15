@@ -1,12 +1,6 @@
 import Section from "../src/components/section";
 
-export const info = {
-  title: "JOI2024参加記",
-  shared: "2024-02-06",
-  updated: "2026-10-15",
-};
-
-export const Content = () => {
+export default () => {
   return <>
     <p>参加記を書けと言われた気がしたので書きます</p>
     <Section heading="1日目">

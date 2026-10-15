@@ -1,12 +1,6 @@
 import Section from "../src/components/section";
 
-export const info = {
-  title: "高専プロコン35参加記",
-  shared: "2024-10-21",
-  updated: "2026-10-15",
-};
-
-export const Content = () => {
+export default () => {
   return <>
     <p>決勝8位でした. 参加記を書きます</p>
     <Section heading="解法">

@@ -1,12 +1,6 @@
 import Section from "../src/components/section";
 
-export const info = {
-  title: "JOI2024 春参加記",
-  shared: "2024-03-27",
-  updated: "2026-10-15",
-};
-
-export const Content = () => {
+export default () => {
   return <>
     <p>うわぁ</p>
     <p><mark>Warning: 問題のネタバレを含みます</mark></p>
