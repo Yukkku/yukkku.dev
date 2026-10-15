@@ -12,7 +12,7 @@ export const Post = () => {
   const slug = () => params.slug;
   const post = (): Info | undefined => {
     const t = slug();
-    if (t in posts) return posts[t];
+    if (Object.hasOwn(posts, t)) return posts[t];
   }
   const [content] = createResource(post, post => {
     return post?.load();
