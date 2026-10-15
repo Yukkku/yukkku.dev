@@ -13,6 +13,7 @@
         packages = with pkgs; [
           bun
           typescript-language-server
+          vscode-langservers-extracted
           prettier
 
           nixd
