@@ -12,7 +12,7 @@ export const Post = () => {
   const slug = () => params.slug;
   const post = (): Info | undefined => {
     const t = slug();
-    if (Object.hasOwn(posts, t)) return posts[t];
+    if (Object.hasOwn(posts, t)) return posts[t as keyof typeof posts];
   }
   const [content] = createResource(post, post => {
     return post?.load();
@@ -23,10 +23,10 @@ export const Post = () => {
     </Show>
     <Show when={post()}>
       <Title>{post()?.title} | Yukkku.dev</Title>
-      <Section heading={post().title}>
+      <Section heading={post()?.title}>
         <div class={styles.info}>
-          <div>Shared:{post().shared}</div>
-          <div>Updated:{post().updated}</div>
+          <div>Shared:{post()?.shared}</div>
+          <div>Updated:{post()?.updated}</div>
           <div><a href={`https://github.com/Yukkku/yukkku.dev/blob/main/posts/${slug()}.tsx`}>Source</a></div>
         </div>
         <Show when={content.state === "errored"}>
@@ -36,7 +36,7 @@ export const Post = () => {
           <div class={styles.loading}>Loading...</div>
         </Show>
         <Show when={content.state === "ready" || content.state === "refreshing"}>
-          {content().default()}
+          {content()?.default()}
         </Show>
       </Section>
     </Show>
