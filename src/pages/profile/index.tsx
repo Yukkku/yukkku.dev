@@ -36,6 +36,9 @@ export const Profile = () => {
           <p>メインのPCをNixOSにしています. ぶっ壊してもすぐ元通りにできる環境が楽すぎて, 他のOSが使えなくなりました</p>
           <p>私のPCの設定は<a href="https://github.com/Yukkku/nix-config">GitHubに上げています</a>. <a href="https://wiki.nixos.org/wiki/Impermanence">impermanence</a>しているので気楽に色々壊せていいです</p>
         </Section>
+        <Section heading="Typst">
+          <p>レポートをTeXで書こうと思ってTeXをWSLに入れたらそのままWSLが壊れたのでTypstを勉強した, というのがきっかけです. 今ではレポートは全部Typstで書いてます</p>
+        </Section>
         <Section heading="Scratch">
           <p>ビジュアルプログラミング言語として有名なScratchですが, そんなScratchの<a href="https://scratch.mit.edu/projects/1282348295/">限界を目指したり</a>, <a href="https://scratch.mit.edu/projects/1304220305/">"穴"を突いたり</a>, <a href="https://github.com/Yukkku/chaseratchp-desktop">改造したり</a>して遊んでいます</p>
         </Section>
@@ -50,6 +53,9 @@ export const Profile = () => {
         <Section heading="Trp.">
           <p>学校では吹奏楽部所属で, トランペットを吹いています. 残念ながらあまり上手では無い</p>
           <p>私物でBachの180ML37GBSPという型番の楽器を持っています</p>
+        </Section>
+        <Section heading="Ot.">
+          <p>オタマトーンを買って, 改造して遊んでいました. なんか変な負荷をかけてしまったらしく, 今は壊れて音が鳴らなくなってしまいましたが</p>
         </Section>
         <Section heading="作曲">
           <p>自己満なので, 表に出せるものはあまり無いですが, 一応<a href="https://musescore.com/user/70915675">Musescore.comにいくつか作品を置いている</a>らしいですよ</p>
