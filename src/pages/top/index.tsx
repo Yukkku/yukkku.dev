@@ -24,7 +24,6 @@ export const Top = () => {
       <LinkEntry service="X" account="@Yuk3u" link="https://x.com/Yuk3u" />
       <LinkEntry service="AtCoder" account="Yukkku" link="https://atcoder.jp/users/Yukkku" />
 
-      <LinkEntry service="Bluesky" account="@yukkku.bsky.social" link="https://bsky.app/profile/yukkku.bsky.social" />
       <LinkEntry service="Instagram" account="@Yukkku" link="https://www.instagram.com/yukkku.tr" />
       <LinkEntry service="Misskey.io" account="@Yukkku" link="https://misskey.io/@Yukkku" />
       <LinkEntry service="MuseScore.com" account="Yukkku" link="https://musescore.com/user/70915675" />
