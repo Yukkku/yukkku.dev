@@ -24,18 +24,20 @@ export const Profile = () => {
         </Section>
         <Section heading="JavaScript / TypeScript">
           <p>詳細な言語仕様まで大体理解しているつもりになっています. フロントエンド書くときや, 雑にスクリプトを書き殴りたいときに使っています</p>
+          <p>このウェブサイトは私が<a href="https://bun.sh">Bun</a> + <a href="https://www.typescriptlang.org/">TypeScript</a> + <a href="https://vite.dev/">Vite</a> + <a href="https://www.solidjs.com/">SolidJS</a>で手書きしています. ソースコードは<a href="https://github.com/Yukkku/yukkku.dev">ここ</a>にあるよ!</p>
         </Section>
         <Section heading="C / C++">
-          <p>プログラムの限界最適化をしたいときに使います. まぁ, C++で情報オリンピックに出て春合宿まで行ったので, そこそこ書ける方って言っていいんじゃないですか</p>
+          <p>プログラムの限界最適化をしたいときに使います. C++で情報オリンピックに出て春合宿まで行ったので, そこそこ書ける方って言っていいとは思います</p>
         </Section>
         <Section heading="Python">
-          <p>あまり好きでは無いし, 勉強した記憶も無いですが, 書けはします. あまり好きでは無いですが</p>
+          <p>勉強した記憶は無いですが, 書けはします. あまり好んで書きはしませんけども</p>
         </Section>
         <Section heading="Nix">
           <p>メインのPCをNixOSにしています. ぶっ壊してもすぐ元通りにできる環境が楽すぎて, 他のOSが使えなくなりました</p>
+          <p>私のPCの設定は<a href="https://github.com/Yukkku/nix-config">GitHubに上げています</a>. <a href="https://wiki.nixos.org/wiki/Impermanence">impermanence</a>しているので気楽に色々壊せていいです</p>
         </Section>
         <Section heading="Scratch">
-          <p>ビジュアルプログラミング言語として有名なScratchですが, そんなScratchの"穴"を突いたり, 改造したりして遊んでいます</p>
+          <p>ビジュアルプログラミング言語として有名なScratchですが, そんなScratchの<a href="https://scratch.mit.edu/projects/1282348295/">限界を目指したり</a>, <a href="https://scratch.mit.edu/projects/1304220305/">"穴"を突いたり</a>, <a href="https://github.com/Yukkku/chaseratchp-desktop">改造したり</a>して遊んでいます</p>
         </Section>
         <p>この他にGo, Zig, Haskellあたりは基本的な文法や仕様は把握していますが, 実用する機会が無いので実務で通用する程度に書けるかは知りません</p>
       </Section>
@@ -47,14 +49,13 @@ export const Profile = () => {
         </Section>
         <Section heading="Trp.">
           <p>学校では吹奏楽部所属で, トランペットを吹いています. 残念ながらあまり上手では無い</p>
-          <p>私物でBachの180ML37GBSPという型番の楽器を持っているらしいです</p>
+          <p>私物でBachの180ML37GBSPという型番の楽器を持っています</p>
         </Section>
         <Section heading="作曲">
-          <p>自己満なので, 表に出せるものはあまり無い</p>
+          <p>自己満なので, 表に出せるものはあまり無いですが, 一応<a href="https://musescore.com/user/70915675">Musescore.comにいくつか作品を置いている</a>らしいですよ</p>
         </Section>
       </Section>
       <Section heading="数学">
-        <p>趣味で数学を嗜む人たちから見たらできない方であると思われます</p>
         <p>数学基礎論や位相空間論などを中途半端に齧り, 賢い定義に唸るなどしています. イデアルって概念考えた人すごすぎ</p>
       </Section>
     </Section>
