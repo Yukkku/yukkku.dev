@@ -1,5 +1,10 @@
 import Section from "../src/components/section";
-export { default as info } from "./20251013-procon36.json";
+
+export const info = {
+  title: "高専プロコン36参加記",
+  shared: "2025-10-13",
+  updated: "2026-10-15",
+};
 
 export const Content = () => {
   return <>
