@@ -8,7 +8,7 @@ import styles from "./index.module.css";
 export const Post = () => {
   const params = useParams<{ slug: string }>();
   const slug = () => params.slug;
-  const [content] = createResource(slug, slug => import(`../../posts/${slug}.tsx`));
+  const [content] = createResource(slug, slug => import(`../../../posts/${slug}.tsx`));
   const title = () => content()?.info.title;
   return <Frame title={title()}>
     <Show when={content()}>

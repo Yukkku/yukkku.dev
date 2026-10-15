@@ -10,7 +10,7 @@ const info: {
     shared: string,
     updated: string,
   }
-} = import.meta.glob("../../posts/*.tsx", { import: 'info', eager: true });
+} = import.meta.glob("../../../posts/*.tsx", { import: 'info', eager: true });
 
 export const Post = () => {
   return <Frame title="Posts">

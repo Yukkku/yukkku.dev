@@ -1,4 +1,4 @@
-import Section from "../components/section";
+import Section from "../src/components/section";
 
 export const info = {
   title: "高専プロコン35参加記",
