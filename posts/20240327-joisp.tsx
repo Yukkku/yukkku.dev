@@ -1,10 +1,5 @@
 import Section from "../src/components/section";
-
-export const info = {
-  title: "JOI2024 春参加記",
-  shared: "2024-03-27",
-  updated: "2026-10-15",
-};
+export { default as info } from "./20240327-joisp.json";
 
 export const Content = () => {
   return <>
