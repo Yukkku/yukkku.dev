@@ -28,6 +28,7 @@ export const Top = () => {
       <LinkEntry service="Instagram" account="@Yukkku" link="https://www.instagram.com/yukkku.tr" />
       <LinkEntry service="Misskey.io" account="@Yukkku" link="https://misskey.io/@Yukkku" />
       <LinkEntry service="MuseScore.com" account="Yukkku" link="https://musescore.com/user/70915675" />
+      <LinkEntry service="Qiita" account="@Yukkku" link="https://qiita.com/Yukkku" />
     </table>
   </>;
 };
