@@ -1,4 +1,4 @@
-import Section from "../src/components/section";
+import Section from "../../src/components/section";
 
 export default () => {
   return <>

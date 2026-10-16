@@ -27,7 +27,7 @@ export const Post = () => {
         <div class={styles.info}>
           <div>Shared:{post()?.shared}</div>
           <div>Updated:{post()?.updated}</div>
-          <div><a href={`https://github.com/Yukkku/yukkku.dev/blob/main/posts/${slug()}.tsx`}>Source</a></div>
+          <div><a href={`https://github.com/Yukkku/yukkku.dev/blob/main/posts/${slug()}/index.tsx`}>Source</a></div>
         </div>
         <Show when={content.state === "errored"}>
           <div class={styles.error}>Error</div>
