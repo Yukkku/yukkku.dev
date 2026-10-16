@@ -14,6 +14,7 @@ render(() => <MetaProvider>
   <Router>
     <Route path="/" component={Top} />
     <Route component={Frame}>
+      <Route path="/apps" component={lazy(() => import("./pages/apps"))} />
       <Route path="/profile" component={lazy(() => import("./pages/profile"))} />
       <Route path="/posts" component={lazy(() => import("./pages/posts"))} />
       <Route path="/posts/:slug" component={Post} />

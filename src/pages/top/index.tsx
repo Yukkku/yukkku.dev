@@ -18,6 +18,7 @@ export const Top = () => {
     <div class={styles.pages}>
       <A href="/profile">Profile</A>
       <A href="/posts">Posts</A>
+      <A href="/apps">Apps</A>
     </div>
     <table class={styles.links}>
       <LinkEntry service="GitHub" account="@Yukkku" link="https://github.com/Yukkku" />
