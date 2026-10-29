@@ -6,7 +6,6 @@ import { MetaProvider } from "@solidjs/meta";
 
 import Frame from './components/frame';
 import Top from './pages/top';
-import Post from './pages/post';
 import NotFound from './pages/404';
 import './index.css';
 
@@ -17,7 +16,7 @@ render(() => <MetaProvider>
       <Route path="/apps" component={lazy(() => import("./pages/apps"))} />
       <Route path="/profile" component={lazy(() => import("./pages/profile"))} />
       <Route path="/posts" component={lazy(() => import("./pages/posts"))} />
-      <Route path="/posts/:slug" component={Post} />
+      <Route path="/posts/:slug" component={lazy(() => import("./pages/post"))} />
       <Route path="*" component={NotFound} />
     </Route>
   </Router>
