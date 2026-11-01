@@ -34,8 +34,8 @@ export default {
   },
   "20261101-weekly": {
     title: "週記 (2026-10-26..2026-11-01)",
-    shared: "xxxx-xx-xx",
-    updated: "xxxx-xx-xx",
+    shared: "2026-11-01",
+    updated: "2026-11-01",
     load: () => import("./20261101-weekly"),
   },
 } as const satisfies { [slug: string]: Info };
